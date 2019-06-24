@@ -8,6 +8,9 @@
             color: black;
             font-family: "Calibri", Calibri, sans-serif;
             height: 100%;
+            padding: 18%;
+            padding-top: 0;
+
         }
 
         h1 {
@@ -19,110 +22,45 @@
             text-align: center;
         }
 
-      
-
     </style>
-    <script>
-        // Prevent forms from submitting.
-        function preventFormSubmit() {
-            var forms = document.querySelectorAll('form');
-            for (var i = 0; i < forms.length; i++) {
-                forms[i].addEventListener('submit', function (event) {
-                    event.preventDefault();
-                });
-            }
-        }
-
-        window.addEventListener('load', preventFormSubmit);
-
-
-        function handleFormSubmit(formObject) {
-
-            /*
-            var level = document.forms["myForm"]["level"].value;
-
-            var fName = document.forms["myForm"]["firstName"].value;
-            var lName = document.forms["myForm"]["lastName"].value;
-
-            if (level !== ' -- select an option -- ' && fName !== '' && lName !== '') {
-                if(google.script.run.processAddRow(formObject)){
-                    google.script.host.close();
-                } else {
-                    google.script.host.close();
-                }
-            } else {
-
-            }
-            */
-            /*
-            var x = document.forms["myForm"]["level"].value;
-            if (x == ' -- select an option -- ') {
-                alert("please enter a level");
-                return false;
-            } else {
-                google.script.host.close();
-            }
-            */
-            /*
-            if (true) {
-                alert("validation failed false");
-                returnToPreviousPage();
-                return false;
-            }
-
-            alert("validations passed");
-            return true;
-            */
-            /*
-                if(formObject.level === ' -- select an option -- '){
-                /*google.script.run.withSuccessHandler(updateUrl).processFormCustom(formObject);
-                if(google.script.run.processAddRow(formObject)){
-                    google.script.host.close();
-                } else {
-                    google.script.host.close();
-                }
-            }
-            */
-
-        }
-
-        function returnToPreviousPage() {
-            window.history.back();
-        }
-
-
-    </script>
-
 
 </head>
-<body>
-<div>
-    <h3>Sheets</h3>
-    <ul>
-        <li><strong>Schedule:</strong> This is where you log all the activities you did in a particular day. Along with goals for that day and notes.</li>
-        <li><strong>Settings:</strong> Disable or create new activities, change activity colors, change graphs settings. </li>
-        <li><strong>Data:</strong> Non interactive. This sheet contains Daily and Weekly averages for every <strong> enabled </strong> activity regardless if you want to graph it or not. You can make your own custom graphs with this data.</li>
-        <li><strong>Graphs:</strong> All activities set to <strong>show on graph</strong> Will appear on the graphs. One will have the weekly averages doing a particular activity. The second one is an area graph of productive time vs. wasted time.</li>
-    </ul>
 
+    <body>
 
-    <h3>How to Use Satisfy Online Schedule</h3>
-    <ul>
-        <li>The schedule consists of an expandable schedule with colored cells that indicate a particular activity. Make the schedule bigger by pressing <strong>Expand Schedule</strong></li>
-        <li>You can add to the list of recognized activities in the <strong> Settings </strong> sheet. Type a name, choose a color, and check the <strong>Enabled</strong> checkbox</li>
-        <li>Click on <strong> Update </strong> in the Satisfy AddOn menu to update all settings in the <strong>Settings</strong>sheet and update the data on the <strong>Data</strong> sheet.</li>
-        <li>You can start logging what you did today!</li>
-    </ul>
-    
-    <p>
-        Satisfy Online Schedule is an app that helps you craft a satisfying schedule.<br>
-        A complete, thought out schedule is an artificially imposed constraint meant to help you focus on a set of goals that you would actually spend time trying to achieve.<br>
-    </p>
+        <div>
 
+            <img src="Medium_Image.png" height="150" width="200"/>
 
-</div>
+            <p>
 
-</body>
+                Per Diem Online Schedule is an app that helps you craft a satisfying schedule.<br>
+                A complete, thought out schedule is an artificially imposed constraint meant to help you focus on a set of goals that you would actually spend time trying to achieve.<br>
+            </p>
 
+        </div>
+        <div>
+
+            <h3>Sheets</h3>
+
+            <ul>
+                <li><strong>Schedule:</strong> This is where you log all the activities you did in a particular day. Along with goals for that day and notes.</li>
+                <li><strong>Settings:</strong> Disable or create new activities, change activity colors, change graphs settings. </li>
+                <li><strong>Data:</strong> Non interactive. This sheet contains Daily and Weekly averages for every <strong> enabled </strong> activity regardless if you want to graph it or not. You can make your own custom graphs with this data.</li>
+                <li><strong>Graphs:</strong> All activities set to <strong>show on graph</strong> Will appear on the graphs. One will have the weekly averages doing a particular activity. The second one is an area graph of productive time vs. wasted time.</li>
+            </ul>
+
+            <h3>How to Use Satisfy Online Schedule</h3>
+
+            <ul>
+                <li>The schedule consists of an expandable schedule with colored cells that indicate a particular activity. Make the schedule bigger by pressing <strong>Expand Schedule</strong></li>
+                <li>You can add to the list of recognized activities in the <strong> Settings </strong> sheet. Type a name, choose a color, and check the <strong>Enabled</strong> checkbox</li>
+                <li>Click on <strong> Update </strong> in the Satisfy AddOn menu to update all settings in the <strong>Settings</strong>sheet and update the data on the <strong>Data</strong> sheet.</li>
+                <li>You can start logging what you did today!</li>
+            </ul>
+
+        </div>
+
+    </body>
 
 </html>
